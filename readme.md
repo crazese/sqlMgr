@@ -13,8 +13,6 @@
 * 4 开始乱序执行sql
 > 在start.py的窗口输入: *start*
 
-* 5 结束
-> 在start.py的窗口输入: *exit*
 
 ## 原理介绍
 整体实现是一个基于socket的c/s结构，通过socketserver来与各客户端建立tcp连接，当一个客户端连接成功后会读取本地的sql.txt并将其中的sql指令上传。server建立一个client(ip:port)与sql指令的映射关系：
